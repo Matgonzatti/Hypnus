@@ -1,0 +1,63 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  #time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* & + div {
+      margin-right: 10px;
+    } */
+  }
+
+  h1 {
+    color: #4c4b4b;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+
+  div {
+    margin-top: 10px;
+  }
+
+  button {
+    margin-top: 48px;
+    align-self: flex-end;
+  }
+
+  button {
+    font-weight: 600;
+    border-radius: 8px;
+    border: 0;
+    background: #4d6c89;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .text {
+      padding: 16px 24px;
+    }
+    .icon {
+      display: flex;
+      padding: 16px 16px;
+      background: #4d6c89;
+      border-radius: 0 8px 8px 0;
+      margin: 0 auto;
+    }
+  }
+`;
